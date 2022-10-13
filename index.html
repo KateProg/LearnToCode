@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="shortcut icon" href="Images/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Learn to Code!</title>
+</head>
+
+<body>
+  <header class="nav-down">
+    <h1>Learn To Code!</h1>
+    <a href="index.html"><img id="logo" src="images/CLG_Logo.png" alt="Logo that reads Code like a Girl"></a>
+    <nav>
+      <div class="navbar mobile">
+        <a id="links" href="contact.html">Contact Us</a>
+        <a id="links" href="useful.html">Useful Links</a>
+        <div class="dropdown">
+          <button class="dropbtn">Learn
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="learn.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="java.html">Using Javascript</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="maincontent">
+      <div class="mainfocus">
+        <h2 class="intro"> Welcome to your <span id="important">greatest</span> achievement yet.</h2>
+        <img onclick="message();" onMouseOver="cursor();" id="book" src="images/book.png">
+      </div>
+      <div class="intropara">
+        <p class="mainparagraph">This website was designed to give to one of the most <em><del>basic</del></em>
+          <ins>fast-tracked</ins> guide to
+          the
+          <strong>absolute</strong> bare boned basics of front-end web development!
+        </p>
+    </section>
+    </div>
+    <div class="robot">
+      <img id="dancingrobot" src="images/robot.gif">
+    </div>
+
+    <div id="news">
+      <section class="articlecontainer">
+        <h3>Tech News</h3>
+        <div class="articles">
+          <article class="relarticle"><a href="">
+              <img class="article-photo" src="images/teck4.jpeg"
+                alt="A cat sitting at a desk wearing a tuxedo and holding cash">
+              <h5>Best gadgets of the Month</h5>
+              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+                voluptate<span class="mobilecb">
+                  beatae iusto vitae nostrum sed optio impedit dicta? Suscipit quod consectetur repellat praesentium
+                  reprehenderit cumque accusantium expedita, illum rerum est!</span></p>
+            </a></article>
+          <article class="relarticle"><a href="">
+              <img class="article-photo" src="images/teck1.webp" alt="An old computer possibly from before 1995">
+              <h5>Most Useful Gadgets ever!</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione voluptate<span class="mobilecb">
+                  beatae iusto vitae nostrum sed optio impedit dicta? Suscipit quod consectetur repellat praesentium
+                  reprehenderit cumque accusantium expedita, illum rerum est!</span></p>
+            </a>
+          </article>
+          <article class="relarticle second"><a href="">
+              <img class="article-photo" src="images/teck2.jpeg"
+                alt="A flashy computer that lights up with a keyboard and mouse">
+              <h5>The cyberspace at its Worse</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione voluptate
+                beatae iusto vitae nostrum sed optio impedit dicta? Suscipit quod consectetur repellat praesentium
+                reprehenderit cumque accusantium expedita, illum rerum est!</p>
+            </a></article>
+          <article class="relarticle second"><a href="">
+              <img class="article-photo" src="images/teck3.jpeg"
+                alt="A lady wearing fashionable black prescription glasses holding a pen sitting at a desk that has books and a laptop on top of it.">
+              <h5>Are you a Tech Genius?</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione voluptate
+                beatae iusto vitae nostrum sed optio impedit dicta? Suscipit quod consectetur repellat praesentium
+                reprehenderit cumque accusantium expedita, illum rerum est!</p>
+            </a></article>
+        </div>
+      </section>
+    </div>
+    <section class="signup">
+      <h4>Subscribe to our newletter!</h4>
+      <form class="subscribe" action="" method="post">
+        <label class="formtext" for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="First name" required /> <br><br>
+        <label class="formtext" for="address">Email Address:</label><br>
+        <input placeholder="Enter Email" type="email" id="adress" name="email" required><br><br>
+        <label class="formtext" for="feedback">Let us know what you think!</label><br>
+        <textarea id="feedback" name="comments" rows="5" columns="20" placeholder="i want to cry"></textarea><br><br>
+        <label class="formtext" for="">How did you find out about us?<br><br>
+          <label for="found-us"> <input id="" input type="checkbox" value="found-us"> Code like a
+            girl</label><br>
+          <label for="found-us" name="found"><input id="" input type="checkbox" value="found-us"> Something
+            Else</label><br>
+          <label for="found-us" name="found"><input id="" input type="checkbox" value="found-us">
+            Advertisement</label><br><br>
+          <label class="formtext">Are you a student wanting to learn or employed looking for a change?</label><br><br>
+          <label for="Student-employed"><input id="student" name="student-employed" type="radio">Student</label>
+          <label for="Student-employed"><input id="student" name="student-employed"
+              type="radio">Student</label><br><br><br><br>
+          <input class="button" type="submit" value="Subscribe"></label>
+      </form>
+    </section>
+    </div>
+  </main>
+  <footer>
+    <p class=" endtext">CLG foundations of Web Dev Assignment 2022</p>
+  </footer>
+
+  <script>
+    codeIcon = "Hello world!";
+    console.log(codeIcon);
+
+    function message() {
+      alert('nothing happened... Just pretend a page turned lol');
+    }
+
+    function cursor() {
+      let cursor = document.querySelector('#book');
+      cursor.style.cursor = "pointer"
+    }
+  </script>
+</body>
+
+</html>

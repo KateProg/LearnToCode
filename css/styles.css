@@ -1,0 +1,441 @@
+body {
+    background-color: #fdecff;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+/* Will add a dropdown menu when using mobile device with javascript? */
+header {
+    background-image: url("../images/darkblue.webp");
+    width: 100%;
+    height: 65px;
+    background-color: #2b3574;
+    position: fixed;
+    top: 0;
+    display: flex;
+    transition: top 0.2s ease-in-out;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Code like a girl logo top middle of page*/
+#logo {
+    width: max(100px, 18vw);
+    margin-left: 130px;
+    padding: 0.4rem;
+    -webkit-tsransition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+#logo:hover {
+    transform: scale(1.5);
+}
+
+/*Animation for h1 in header- maybe use an id instead?*/
+@keyframes hover {
+    from {
+        color: #FFF;
+    }
+
+    to {
+        color: lightcoral;
+    }
+}
+
+h1 {
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-size: 2vw;
+    text-align: center;
+    padding-left: 0.8em;
+    text-shadow: 2px 2px red;
+}
+
+h1:hover {
+    animation-name: hover;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    cursor: none;
+}
+
+nav {
+    display: inline-block;
+    font-weight: bolder;
+}
+
+.dropdown {
+    margin-right: 12px;
+}
+
+.dropbtn {
+    font-weight: bolder;
+    padding-top: 1%;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+nav .navbar>a {
+    font-size: 16px;
+    color: lightcoral;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: lightcoral;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: lightcoral;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover,
+.navbar a:hover {
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block
+}
+
+/*   HEADER FINISH   */
+main {
+    padding-top: 50px;
+}
+
+.maincontent {
+    background-image: url("../images/background.jpeg");
+    margin: 60px 150px;
+    border-radius: 10px;
+    animation: fadeIn 1s;
+}
+
+.mainfocus {
+    display: flex;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro {
+    font-size: 100px;
+    font-size: 6.4vw;
+    margin-left: 20px;
+    animation: fadeIn 1s;
+
+}
+
+#important {
+    color: rgb(255, 127, 80);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#book {
+    height: 200px;
+    width: 130px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    padding-bottom: 200px;
+    margin-top: 0;
+    animation: fadeIn 1s;
+}
+
+.intropara {
+    text-align: center;
+    font-size: 40px;
+    margin: -5px 300px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    color: white;
+    animation: fadeIn 1s;
+}
+
+footer {
+    bottom: 0;
+    margin-left: 840px;
+    font-size: 10px;
+    position: fixed;
+}
+
+.robot {
+    width: 135px;
+    right: 15%;
+    position: absolute;
+    margin-top: -150px;
+    z-index: 5;
+}
+
+#dancingrobot {
+    height: 200px
+}
+
+
+.articlecontainer {
+    background-color: #2E5984;
+    width: 950px;
+    background-image: url("../images/images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-right: 600px;
+    border-radius: 5px;
+    height: 710px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.articles {
+    display: flex;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.relarticle {
+    background-color: lightcoral;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-tsransition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.relarticle a {
+    text-decoration: none;
+    color: white;
+}
+
+.relarticle a:active {
+    color: initial
+}
+
+.relarticle:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.relarticle p {
+    text-align: center;
+}
+
+h3 {
+    color: #FFF;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px red;
+    margin-bottom: -20px;
+    text-decoration: underline;
+}
+
+.article-photo {
+    height: 180px;
+    width: 180px;
+    border: 2px solid navy;
+    border-radius: 5px;
+}
+
+
+h4 {
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 0.8em;
+    padding-top: 25px;
+    text-shadow: 2px 2px red;
+}
+
+h5 {
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px red;
+}
+
+label {
+    color: white;
+}
+
+form {
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.signup {
+    background-image: url("../images/subscirbe.jpeg");
+    background-color: #1E90FF;
+    margin: -730px 60px 60px 1150px;
+    border-radius: 5px;
+    height: 710px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.news {
+    display: flex;
+}
+
+.formtext {
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+textarea {
+    height: auto;
+    width: auto;
+}
+
+.button {
+    background-color: #ef3742;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    box-shadow: 10px 10px 0 -1px #2b3574;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: red;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: #2b3574;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .robot {
+        display: none;
+        position: absolute;
+    }
+}
+
+@media (max-width: 600px) {
+    .maincontent {
+        margin: 60px 20px;
+        background-size: contain;
+    }
+
+    .intropara {
+        display: block;
+        font-size: 12px;
+        margin: auto;
+        padding: none;
+    }
+
+    #book {
+        display: none;
+        position: absolute;
+    }
+
+    .robot {
+        display: none;
+        position: absolute;
+    }
+
+    .articlecontainer {
+        width: 325px;
+        margin: 60px 20px;
+    }
+
+    .articles {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .relarticle {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -40px;
+        margin-right: 35px;
+    }
+
+    .mobilecb {
+        display: none;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .second {
+        display: none;
+        position: absolute;
+    }
+
+    .signup {
+        margin: 60px 20px;
+    }
+}
